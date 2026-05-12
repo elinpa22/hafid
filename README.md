@@ -1,0 +1,2 @@
+# hafid
+Lokaverkefni í vefhönnun
