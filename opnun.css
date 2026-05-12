@@ -1,0 +1,57 @@
+/* Stafir */
+.press-start-2p-regular {
+  font-family: "Press Start 2P", system-ui;
+  font-size: 10px;
+  line-height: 1.5;
+  text-align: center;
+  font-style: normal;
+}
+
+h1 {
+    font-size: 80px;
+}
+h2 {
+    font-size: 22px;
+}
+p {
+    font-size: 15px;
+}
+
+/* Takki */
+.stor-takki {
+    display: block;
+    border-radius: 1rem;
+    width: 400px;
+    margin: 2rem auto;
+    padding: 80px 1rem; /* til að stækka kassann*/
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase; /* hástafir*/
+    background-color: rgb(65, 136, 195, 0.85)
+}
+.stor-takki:hover {
+    filter: drop-shadow(0 0 10px black);
+}
+
+/* Myndband af sjó */
+#bg-video,
+#bg-image {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    left: 0;
+    top: 0;
+    position: fixed;
+    z-index: -10;
+}
+#bg-image {
+    z-index: -20;
+}
+
+.content {
+    display: block;
+    margin: 0px auto;
+    width: 50vw;
+    min-width: 280px;
+    color: white;
+}
