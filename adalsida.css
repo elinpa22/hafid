@@ -21,9 +21,32 @@ a {
     border-radius: 1rem;
     border: none;
 }
+.gulur {
+    background-color: yellow;
+    border-radius: 1rem;
+}
+.rauður {
+    background-color: red;
+    border-radius: 1rem;
+}
+.grænn{
+    background-color: lightgreen;
+    border-radius: 1rem;
+}
+.blár{
+    background-color: aqua;
+    border-radius: 1rem;
+}
+
+
 
 img {
     border-radius: 1rem;
+}
+figcaption {
+    text-align: center;
+    padding: 0.5rem 0 2rem 0;
+    font-size: 16px;
 }
 
 
@@ -93,7 +116,6 @@ p {
 
 /* Dálka skipulag*/
 section { /* boxin í section*/
-	border: 1px solid;
 	padding: 1rem; 
 }
 .col-2 {
@@ -101,8 +123,6 @@ section { /* boxin í section*/
 	grid-template-columns: 1fr 1fr; /* fr þægilegt vegna þess að þá erum við að skipta eftir hlutföllum */
 	column-gap: 1rem;
     padding: 1rem;
-
-
 }
 .col-3 {
     display: grid;
@@ -117,6 +137,10 @@ section { /* boxin í section*/
     padding: 1rem;
 }
 
+.mikið-bil {
+    padding: 1400px 0 0 0;
+    color: black;
+}
 
 
 
@@ -146,6 +170,7 @@ section { /* boxin í section*/
 .art4 {
     background-color: black;
     color: white;
+
 }
 
 
