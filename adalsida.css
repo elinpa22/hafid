@@ -1,122 +1,87 @@
 html {
     scroll-behavior: smooth;
-
 }
 body {
-    margin: auto;
-    max-width: 1200px;
+/* Mynd af sjó í bg */
+#bg-image {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    left: 0;
+    top: 0;
+    position: fixed;
+    z-index: -10;
 }
-
-a {
-    color: blue;
-}
-
-.bleikt-box {
-    background-color: rgba(194, 34, 188, 0.3);
-    border-radius: 1rem;
-    border: none;
-}
-.hvítt-box {
-    background-color: rgba(255, 255, 255, 0.3);
-    border-radius: 1rem;
-    border: none;
-}
-.gulur {
-    background-color: yellow;
-    border-radius: 1rem;
-}
-.rauður {
-    background-color: red;
-    border-radius: 1rem;
-}
-.grænn{
-    background-color: lightgreen;
-    border-radius: 1rem;
-}
-.blár{
-    background-color: aqua;
-    border-radius: 1rem;
 }
 
 
-
-img {
-    border-radius: 1rem;
-}
-figcaption {
-    text-align: center;
-    padding: 0.5rem 0 2rem 0;
-    font-size: 16px;
-}
-
-
-
-
-/* STAFIR */
+/* Leturgerð */
 h1 {
-    font-size: 45px;
-    color: orange;
-    /*filter: drop-shadow(0 0 15px black);*/
+    font-size: 50px;
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.4;
+    text-align: center;
+    filter: drop-shadow(0 0 5px black);
+    color: white;
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+}
+.meira-bil{
+    margin-top: 20rem;
+    margin-bottom: 35rem;
+    font-size: 80px;
 }
 h2 {
-    font-size: 28px;
+    font-size: 40px;
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.4;
+    text-align: center;
+    margin-top: 5rem ;
+    margin-bottom: 2rem;
 }
 h3 {
-    font-size: 20;
+    font-size: 20px;
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.4;
+    text-align: center;
 }
 p {
     font-size: 15px;
-  /*  font-family: 'Courier New', Courier, monospace; */
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    line-height: 1.6;
 }
-
-
-
-
-
-.hliðar-dálkar {
-    grid-area: aside-menu;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
+.texti-mynd {
+    font-style: italic;
+    text-align: center;
 }
-
-.hliðar-dálkar a {
-    padding: 4px 8px;
+figcaption {
+    font-size: 15px;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: italic;
+    line-height: 1.6;
+    text-align: center;
+    margin-bottom: 1rem;
 }
-.sticky-menu {
-    display: block;
-    position: sticky; /* þetta er ekki nóg þarf að halda áfram*/
-    top: 0;
-    padding: .5rem 0;
-    text-decoration: none;
-}
-
-.container{
-    display: grid;
-    justify-items: auto;
-}
-
-.center {
-    display: grid;
-    justify-content: center;
-}
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /* Dálka skipulag*/
 section { /* boxin í section*/
 	padding: 1rem; 
+}
+.container{
+    display: grid;
+    justify-items: auto;
 }
 .col-2 {
 	display: grid;
@@ -137,19 +102,6 @@ section { /* boxin í section*/
     padding: 1rem;
 }
 
-.mikið-bil {
-    padding: 1400px 0 0 0;
-    color: black;
-}
-
-
-
-
-
-
-
-
-
 
 /* Gradient*/
 .art1a {
@@ -161,28 +113,110 @@ section { /* boxin í section*/
 }
 .art2 {
     background-color: blue ;
-    background-image: linear-gradient(to bottom, blue 80%, darkblue)
+    background-image: linear-gradient(to bottom, blue 80%, darkblue);
+    color: rgb(180, 177, 177);
 }
 .art3 {
     background-color: darkblue;
-    background-image: linear-gradient(to bottom, darkblue 80%, black)
+    background-image: linear-gradient(to bottom, darkblue 80%, black);
+    color: rgb(180, 177, 177);
 }
 .art4 {
     background-color: black;
-    color: white;
+    h1{ color: orange;}
+}
 
+
+/* Lituð box*/
+.bleikt-box {
+    background-color: rgba(194, 34, 188, 0.2);
+    border-radius: 1rem;
+    border: none;
+}
+.bleikt-box2 {
+    background-color: rgba(194, 34, 188, 0.2);
+    border: none;
+}
+.gulur {
+    background-color: rgb(255, 255, 0, 0.6);
+    border-radius: 1rem;
+}
+.rauður {
+    background-color: rgb(255, 0, 0, 0.6);
+    border-radius: 1rem;
+}
+.grænn{
+    background-color: rgb(144, 238, 144, 0.8);
+    border-radius: 1rem;
+}
+.blár{
+    background-color: rgb(0, 255, 255, 0.6);
+    border-radius: 1rem;
+}
+.mikið-bil {
+    padding: 75rem 0 0 0;
+    color: black;
+}
+
+
+/*Dálkar fyrir lögin í hafinu*/
+nav {
+    background-color: rgb(0, 0, 0, 0.6);
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    z-index: 10;
+}
+.bara-dálkar {
+    grid-area: aside-menu;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    color: white;
+}
+.bara-dálkar :hover {
+    color: white;
+}
+.bara-dálkar a {
+    padding: 4px 8px;
+    text-decoration: none;
+    color: white;
+}
+.bara-dálkar a:visited{
+    color: white;
+}
+.sticky-menu {
+    display: block;
+    position: sticky;
+    top: 0;
+    padding: .5rem 0;
+}
+
+
+/*Tengiliðir*/
+a {
+    color: yellow;
+}
+a:hover {
+    color: rgb(223, 223, 89);
+}
+a:visited {
+    color: brown ;
 }
 
 
 /* LJÓSMYNDIR */
 img {
-     max-width: 100%;
-     height: auto;
+    max-width: 100%;
+    height: auto;
+    border-radius: 1rem;
 }
 figure {
     margin:0;
 }
-
+.meira-bil-hjá-myndum{
+    margin-bottom: 8rem;
+}
 
 
 /* Myndband af fiski*/
@@ -200,24 +234,51 @@ figure {
 }
 
 
-
 /* Vasaljós */
 .button {
     width: 200px;
     height: 40px;
     padding: 2rem 0 7rem 0;
-
-    color: black;
     background-color: rgb(31, 29, 29);
-    
     outline: none;
     border: none;
     border-radius: 30px;
     cursor: pointer;
+    justify-content: center;
 }
 .button:hover, .button:active {
     background: orange;
 }
 
 
-/* https://www.svgrepo.com/collection/dazzle-line-icons/2?search=lightbulb */
+/* svegjanleg hönnun*/
+@media screen and (min-width:375px) {
+    .col-2, .col-3, .col-4 {
+        grid-template-columns: 1fr ;
+        column-gap: 1rem;
+    }
+    h1, h2, h3{
+        font-size: 35px;
+    }
+}
+@media screen and (min-width:768px) {
+	.col-2, .col-4 {
+		grid-template-columns: 1fr 1fr;
+		column-gap: 1rem;
+	}
+	.col-3 {
+		grid-template-columns: 1fr 1fr 1fr;
+		column-gap: 1rem;
+	}
+}
+@media screen and (min-width:960px) {
+		/* dálkaskipulag*/
+		body {
+			margin: 0 auto;
+			max-width: 960px;
+		}
+		.col-4 {
+			grid-template-columns: repeat(4, 1fr);
+			column-gap: 1rem;
+		}
+}

@@ -1,21 +1,35 @@
-/* Stafir */
-.press-start-2p-regular {
-  font-family: "Press Start 2P", system-ui;
-  font-size: 10px;
-  line-height: 1.5;
-  text-align: center;
-  font-style: normal;
-}
-
+/* Leturgerð */
 h1 {
-    font-size: 80px;
+    font-size: 70px;
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.4;
+    text-align: center;
+    filter: drop-shadow(0 0 5px black);
+    color: white;
+    margin-bottom: 25rem;
+    margin-top: 10rem;
 }
 h2 {
-    font-size: 22px;
+    font-size: 20px;
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.4;
+    text-align: center;
+    filter: drop-shadow(0 0 5px black);
+    margin-bottom: 50px;
 }
-p {
-    font-size: 15px;
+h3 {
+    font-size: 30px;
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.4;
+    text-align: center;
 }
+
 
 /* Takki */
 .stor-takki {
@@ -23,15 +37,20 @@ p {
     border-radius: 1rem;
     width: 400px;
     margin: 2rem auto;
-    padding: 80px 1rem; /* til að stækka kassann*/
+    padding: 60px 1rem; /* til að stækka kassann*/
     text-align: center;
     text-decoration: none;
     text-transform: uppercase; /* hástafir*/
-    background-color: rgb(65, 136, 195, 0.85)
+    background-color: rgb(65, 136, 195, 0.85);
+    margin-bottom: 150px;
 }
 .stor-takki:hover {
-    filter: drop-shadow(0 0 10px black);
+    filter: drop-shadow(0 0 5px black);
 }
+.stor-takki:active {
+    color: white;
+}
+
 
 /* Myndband af sjó */
 #bg-video,
@@ -47,7 +66,6 @@ p {
 #bg-image {
     z-index: -20;
 }
-
 .content {
     display: block;
     margin: 0px auto;
